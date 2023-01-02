@@ -1,0 +1,116 @@
+:root {
+  --title: rgb(255, 255, 255);
+  --buttons:rgb(255, 255, 255);
+  --timer: rgb(17, 17, 5);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-image: url("background.jpg");
+  padding: -500;
+  margin: -500;
+}
+
+.blurEffect {
+  background: rgba(255, 255, 255, 0.155);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  transition: 0.5s all ease;
+  justify-content: space-between; 
+  flex-direction: column;
+  height: 85%;
+  width: 65%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.counterPositioning {
+  color: var(--buttons);
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 40%; 
+}
+
+.timeCounter {
+  color: var(--timer);
+  position: absolute;
+  font-size: 12vw;
+  font-weight: 500;
+}
+  
+.settingChoice {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.settingChoice__Button {
+  background: none;
+  border: none;
+  border-radius: 100px;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;  
+  color: var(--buttons);
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  margin: 0px 15px;  
+}
+
+.settingChoice__Button.active {
+  border: 2px solid var(--buttons);
+}
+
+.title {
+  font-size: 500vw;
+  color: var(--title);
+  top: 500px;
+  position: absolute;
+  text-align: center;
+}
+
+.textCharacteristics {
+  font-family: 'Courier New', Courier, monospace; 
+  display: flex; 
+  position: absolute;  
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 100%;
+  width: 100%;  
+}
+
+.text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

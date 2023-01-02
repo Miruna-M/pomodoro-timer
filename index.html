@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="text">
+      <div class="textCharacteristics">
+        <div class="blurEffect">
+          <div class="settingChoice">
+            <button
+              class="settingChoice__Button active"
+              id="workChoice"
+              data-mode="pomodoro"
+            >Work</button>
+            <button
+              class="settingChoice__Button"
+              id="shortChoice"
+              data-mode="short"
+            >Short</button>
+            <button
+              class="settingChoice__Button"
+              id="longChoice"
+              data-mode="long"
+            >Long</button>
+          </div>
+          <div class="counterPositioning">
+            <i
+              class="fa fa-hourglass-end"
+              id="startStop"
+              data-paused="true"
+              aria-hidden="true"
+            ></i>
+          </div>
+        </div>
+        <h1 class="timeCounter" id="timeCounter" data-mode="pomodoro">25:00</h1>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
